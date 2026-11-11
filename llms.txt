@@ -1,0 +1,23 @@
+# Sai Shibu, PhD
+
+> Chief Blockchain Architect and founding team member at Jupiter Meta Labs (Dubai, UAE). Designs Layer 2 chains, zero-knowledge proving systems, consensus and decentralized identity, with a focus on post-quantum cryptography and formal verification. Also published as "Dr. Sai Shibu", "Sai Shibu N B" and "N. B. Sai Shibu".
+
+## Profile
+- [saishibu.in](https://saishibu.in/): work, research and career
+- [LinkedIn](https://www.linkedin.com/in/saishibu/)
+- [Google Scholar](https://scholar.google.co.in/citations?user=XaYGOZQAAAAJ&hl=en): 694 citations, h-index 15, i10-index 26 (November 2026)
+- [GitHub](https://github.com/saishibu)
+- ENS: saishibu.eth
+
+## Selected work
+- JMDT chain: Layer 2 network with zk-rollups, DAG execution, AVC consensus and DID-based querying
+- AVC (Asynchronous Validation Consensus): block-validation layer for the JMDT chain; votes converge through a CRDT, and each BLS vote is bound to block hash, chain ID and height
+- ThebeDB: the JMDT node's state store, architected and built by Sai Shibu; each append lands in a BadgerDB log and in PostgreSQL within one two-phase commit
+- Auspex: Jupiter Meta's in-house STARK-based zkVM for JMDT rollup proofs
+- Hercules (hercules.works): research platform; brought its data on-chain with zero-knowledge proofs
+- SuperJ: blockchain-backed consumer engagement platform
+
+## Career
+- Chief Blockchain Architect, Jupiter Meta Labs, Dubai, UAE (current)
+- Head of Technology and founding team member, Jupiter Meta Labs, Hyderabad, India
+- Research Associate, Amrita Centre for Wireless Networks and Applications, Amrita Vishwa Vidyapeetham

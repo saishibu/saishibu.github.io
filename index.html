@@ -17,7 +17,7 @@
 	<meta name="theme-color" content="#0f141a">
 	<title>Sai Shibu, PhD | Chief Blockchain Architect, Jupiter Meta Labs</title>
 	<meta name="description"
-		content="Sai Shibu, PhD, is Chief Blockchain Architect at Jupiter Meta Labs, designing Layer 2 chains, zero-knowledge proving systems, consensus and decentralized identity, secured with post-quantum cryptography and formal verification.">
+		content="Sai Shibu, PhD: Chief Blockchain Architect at Jupiter Meta Labs. Layer 2 chains, zero-knowledge proofs, post-quantum cryptography and formal verification.">
 	<meta name="author" content="Sai Shibu">
 	<meta name="robots" content="index, follow">
 	<link rel="canonical" href="https://saishibu.in/">
@@ -41,28 +41,230 @@
 	<meta name="twitter:creator" content="@saishibu">
 
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Sai Shibu",
-		"honorificSuffix": "PhD",
-		"jobTitle": "Chief Blockchain Architect",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Jupiter Meta Labs"
-		},
-		"address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
-		"url": "https://saishibu.in/",
-		"image": "https://saishibu.in/img/og.png",
-		"sameAs": [
-			"https://www.linkedin.com/in/saishibu/",
-			"https://x.com/saishibu",
-			"https://github.com/saishibu",
-			"https://scholar.google.co.in/citations?user=XaYGOZQAAAAJ&hl=en",
-			"https://www.researchgate.net/profile/Sai_Shibu_N_B2"
-		],
-		"knowsAbout": ["Blockchain architecture", "Layer 2 rollups", "Zero-knowledge proofs", "zkVM", "Consensus protocols", "Decentralized identity", "Tokenomics", "Internet of Things"]
-	}
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfilePage",
+   "@id": "https://saishibu.in/#page",
+   "url": "https://saishibu.in/",
+   "name": "Sai Shibu, PhD | Chief Blockchain Architect, Jupiter Meta Labs",
+   "dateModified": "2026-11-11",
+   "mainEntity": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://saishibu.in/#person",
+   "name": "Sai Shibu",
+   "honorificSuffix": "PhD",
+   "alternateName": [
+    "Dr. Sai Shibu",
+    "Sai Shibu N B",
+    "N. B. Sai Shibu",
+    "saishibu.eth"
+   ],
+   "description": "Sai Shibu, PhD: Chief Blockchain Architect at Jupiter Meta Labs. Layer 2 chains, zero-knowledge proofs, post-quantum cryptography and formal verification.",
+   "jobTitle": "Chief Blockchain Architect",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "Jupiter Meta Labs"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE"
+   },
+   "url": "https://saishibu.in/",
+   "image": "https://saishibu.in/img/og.png",
+   "sameAs": [
+    "https://www.linkedin.com/in/saishibu/",
+    "https://x.com/saishibu",
+    "https://github.com/saishibu",
+    "https://scholar.google.co.in/citations?user=XaYGOZQAAAAJ&hl=en",
+    "https://www.researchgate.net/profile/Sai_Shibu_N_B2",
+    "https://app.ens.domains/saishibu.eth"
+   ],
+   "knowsAbout": [
+    "Blockchain architecture",
+    "Layer 2 rollups",
+    "Zero-knowledge proofs",
+    "zkVM",
+    "STARK proofs",
+    "Consensus protocols",
+    "BLS signatures",
+    "CRDTs",
+    "Decentralized identity",
+    "Post-quantum cryptography",
+    "Formal verification",
+    "Tokenomics",
+    "Internet of Things"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://saishibu.in/#faq",
+   "about": {
+    "@id": "https://saishibu.in/#person"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Who is Sai Shibu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sai Shibu, PhD, is Chief Blockchain Architect and a founding team member at Jupiter Meta Labs, based in Dubai, UAE. He designs Layer 2 chains, zero-knowledge proving systems, consensus and decentralized identity, with a focus on post-quantum cryptography and formal verification."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Sai Shibu work on at Jupiter Meta Labs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The JMDT chain and its infrastructure: AVC consensus, the ThebeDB state store, which he architected and built, the Auspex zkVM, and on-chain zero-knowledge data for Hercules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is AVC consensus?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AVC (Asynchronous Validation Consensus) is the block-validation layer of the JMDT chain. Validator votes converge through a CRDT instead of lockstep rounds, and each BLS vote is bound to block hash, chain ID and height so it cannot be replayed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is ThebeDB?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ThebeDB is the state store of the JMDT node. Each append lands in a BadgerDB log and in PostgreSQL within one two-phase commit, so the queryable view never drifts from the canonical record, and signed checkpoints make the chain head tamper-evident."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Sai Shibu's research background?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "He holds a PhD in blockchain, IoT, AI and optimisation and was a research associate at Amrita Vishwa Vidyapeetham. He has 62 papers, with 694 citations and an h-index of 15 on Google Scholar as of November 2026."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How can I contact Sai Shibu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Through LinkedIn (in/saishibu) or X (@saishibu). His ENS name is saishibu.eth."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Optimizing microgrid resilience: integrating IoT, blockchain, and smart contracts for power outage management",
+   "datePublished": "2024",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "IEEE Access"
+   },
+   "sameAs": "https://doi.org/10.1109/ACCESS.2024.3360696",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Blockchain enabled shared mobility for sustainable transportation",
+   "datePublished": "2023",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM BlockSys workshop"
+   },
+   "sameAs": "https://doi.org/10.1145/3628354.3629528",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Design of a secured medical data access management using Ethereum smart contracts, Truffle Suite and Web3",
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM SenSys"
+   },
+   "sameAs": "https://doi.org/10.1145/3560905.3568180",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Electric vehicle as a virtual mobile power plant for smart grid: a blockchain and cryptocurrency-based proof of concept system",
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM SenSys"
+   },
+   "sameAs": "https://doi.org/10.1145/3560905.3568178",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "A prototype design for gamified blood donation app using blockchain technology, IPFS and NFTs",
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM SenSys"
+   },
+   "sameAs": "https://doi.org/10.1145/3560905.3568177",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Architecture and proof of concept design for community marketplace using blockchain technology and fuzzy intelligence",
+   "datePublished": "2022",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "IRECAP journal"
+   },
+   "sameAs": "https://doi.org/10.15866/irecap.v12i1.21514",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Decentralized power system and future mobility: the use cases of community driven electric vehicle charging infrastructure",
+   "datePublished": "2019",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM workshop on smart cities and communities"
+   },
+   "sameAs": "https://doi.org/10.1145/3364544.3364829",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "name": "Conceptualizing blockchain based energy market for self sustainable community",
+   "datePublished": "2019",
+   "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "ACM BlockSys workshop"
+   },
+   "sameAs": "https://doi.org/10.1145/3362744.3363345",
+   "author": {
+    "@id": "https://saishibu.in/#person"
+   }
+  }
+ ]
+}
 	</script>
 
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -311,6 +513,38 @@
 			</div>
 		</section>
 
+		<section class="section" id="faq" aria-labelledby="faq-h">
+			<div class="wrap split">
+				<h2 id="faq-h">In brief</h2>
+				<dl class="faq">
+					<div>
+						<dt>Who is Sai Shibu?</dt>
+						<dd>Sai Shibu, PhD, is Chief Blockchain Architect and a founding team member at Jupiter Meta Labs, based in Dubai, UAE. He designs Layer 2 chains, zero-knowledge proving systems, consensus and decentralized identity, with a focus on post-quantum cryptography and formal verification.</dd>
+					</div>
+					<div>
+						<dt>What does Sai Shibu work on at Jupiter Meta Labs?</dt>
+						<dd>The JMDT chain and its infrastructure: AVC consensus, the ThebeDB state store, which he architected and built, the Auspex zkVM, and on-chain zero-knowledge data for Hercules.</dd>
+					</div>
+					<div>
+						<dt>What is AVC consensus?</dt>
+						<dd>AVC (Asynchronous Validation Consensus) is the block-validation layer of the JMDT chain. Validator votes converge through a CRDT instead of lockstep rounds, and each BLS vote is bound to block hash, chain ID and height so it cannot be replayed.</dd>
+					</div>
+					<div>
+						<dt>What is ThebeDB?</dt>
+						<dd>ThebeDB is the state store of the JMDT node. Each append lands in a BadgerDB log and in PostgreSQL within one two-phase commit, so the queryable view never drifts from the canonical record, and signed checkpoints make the chain head tamper-evident.</dd>
+					</div>
+					<div>
+						<dt>What is Sai Shibu&#x27;s research background?</dt>
+						<dd>He holds a PhD in blockchain, IoT, AI and optimisation and was a research associate at Amrita Vishwa Vidyapeetham. He has 62 papers, with 694 citations and an h-index of 15 on Google Scholar as of November 2026.</dd>
+					</div>
+					<div>
+						<dt>How can I contact Sai Shibu?</dt>
+						<dd>Through LinkedIn (in/saishibu) or X (@saishibu). His ENS name is saishibu.eth.</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
+
 		<section class="section" id="elsewhere" aria-labelledby="elsewhere-h">
 			<div class="wrap split">
 				<div>
@@ -321,6 +555,7 @@
 					<li><a href="https://www.linkedin.com/in/saishibu/" rel="noopener">LinkedIn</a><span>in/saishibu</span></li>
 					<li><a href="https://x.com/saishibu" rel="noopener">X</a><span>@saishibu</span></li>
 					<li><a href="https://github.com/saishibu" rel="noopener">GitHub</a><span>saishibu</span></li>
+					<li><a href="https://app.ens.domains/saishibu.eth" rel="noopener">ENS</a><span>saishibu.eth</span></li>
 					<li><a href="https://scholar.google.co.in/citations?user=XaYGOZQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a><span>Publications</span></li>
 					<li><a href="https://www.researchgate.net/profile/Sai_Shibu_N_B2" rel="noopener">ResearchGate</a><span>Sai Shibu N B</span></li>
 				</ul>
@@ -330,7 +565,7 @@
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<p>&copy; <span id="year">2026</span> Sai Shibu</p>
+			<p>&copy; <span id="year">2026</span> Sai Shibu. Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
 		</div>
 	</footer>
 
